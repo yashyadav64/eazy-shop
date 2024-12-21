@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Cart</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bootstrap Image Slider</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+
+<div id="carouselExample" class="carousel slide" data-bs-ride="carousel">
+    <!-- Indicators -->
+    <div class="carousel-indicators">
+        <button type="button" data-bs-target="#carouselExample" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#carouselExample" data-bs-slide-to="1" aria-label="Slide 2"></button>
+        <button type="button" data-bs-target="#carouselExample" data-bs-slide-to="2" aria-label="Slide 3"></button>
+    </div>
+
+    <!-- Slider content -->
+    <div class="carousel-inner">
+        <div class="carousel-item active">
+            <img src="https://www.reliancedigital.in/medias/HP-Envy-Banner-1365x260pxD.jpg?context=bWFzdGVyfGltYWdlc3wxMTgzMzN8aW1hZ2UvanBlZ3xpbWFnZXMvaGIyL2g5Ny8xMDE4MTg1NzM3ODMzNC5qcGd8NDdlOGI0YTQ1NzI0MjQ2OTU0N2NmMWJjYjMwYWZjN2IzZDQ5NDExNDVhMmFiYTI5NDI4OTM0ZjMxYmIwZjEzYw" class="d-block w-100" alt="First Slide">
+        </div>
+        <div class="carousel-item">
+            <img src="https://www.reliancedigital.in/medias/Omen-Laptops-2-1-.jpg?context=bWFzdGVyfGltYWdlc3wxMjUxMDd8aW1hZ2UvanBlZ3xpbWFnZXMvaDA0L2g4Zi8xMDA5OTE4ODQ5ODQ2Mi5qcGd8NTZmZTc5YTFlMzM0NjAwNzIxYjRkNzZlYTViZjQzODg4NzVjNTM4YmFjMjkyMTk1MmRhZjQxZmFlZTk0OTAyNA" class="d-block w-100" alt="Second Slide">
+        </div>
+        <div class="carousel-item">
+            <img src="https://www.reliancedigital.in/medias/Pro-11-LT-7-1365x260.jpg?context=bWFzdGVyfGltYWdlc3wxNTU0NTF8aW1hZ2UvanBlZ3xpbWFnZXMvaGRlL2gzYS8xMDIwMTAzNDg1MDMzNC5qcGd8YjNmYzRkMDcwMTI4YjBiM2E4NTU3YWUwMzhmZmZmZGMyYzUxZjQ2OGJjMzQyZjQ0MTlmMTZmOWIzNjBlMDcxZQ" class="d-block w-100" alt="Third Slide">
+        </div>
+    </div>
+
+    <!-- Controls -->
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+    </button>
+</div>
+
+<!-- Bootstrap Bundle with Popper -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"></script>
+
+    <style>
+        /* Container for all product cards */
+        .product-container {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            justify-content: center;
+        }
+
+        /* Individual product card */
+        .product-card {
+            width: 300px;
+            border: 1px solid #ddd;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            background-color: #fff;
+            transition: transform 0.2s ease;
+        }
+
+        /* Hover effect */
+        .product-card:hover {
+            transform: translateY(-10px);
+        }
+
+        /* Product image */
+        .product-card img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+        }
+
+        /* Product details */
+        .product-details {
+            padding: 10px;
+        }
+
+        /* Product name and price */
+        .product-name {
+            font-size: 18px;
+            font-weight: bold;
+            color: #333;
+        }
+
+        .product-price {
+            font-size: 16px;
+            color: #28a745;
+            margin-top: 10px;
+        }
+
+        /* Button styles */
+        .product-card .actions {
+            padding: 10px;
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .product-card button {
+            background-color: #007bff;
+            color: #fff;
+            border: none;
+            padding: 5px 10px;
+            cursor: pointer;
+            border-radius: 5px;
+            font-size: 14px;
+            transition: background-color 0.3s ease;
+        }
+
+        .product-card button:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="product-container">
+        <!-- Product Card 1 -->
+         <a href="D:\MY DATA COCHING\website 12\pro 1.html">
+        <div class="product-card">
+            <img src="https://www.reliancedigital.in/medias/Lenovo-Yoga-Laptop-494351836-i-1-1200Wx1200H-300Wx300H?context=bWFzdGVyfGltYWdlc3w2Mzk3MHxpbWFnZS9qcGVnfGltYWdlcy9oODMvaDJmLzEwMTAxNTEwODk3Njk0LmpwZ3wzMjA1YTQ2YTc1OWIxYjY1MDI0NDhjNWJlMzRiOTNhYWUyYTM1NTQyOGYxY2ZjOGQ4MmQyMzcwZjRjMjlkYjkw" alt="Laptop Image">
+            <div class="product-details">
+                <div class="product-name">Lenovo IP3 25IN Laptop (16 GB RAM/512 GB, 13 Gen Core i5-13420H, 15.6 inch-39.6 cm Display)(494351836)
+                </div>
+                <div class="product-price">₹57,500.00</div>
+            </div>
+            <div class="actions">
+                <button>Compare</button>
+                <button>Add to Wishlist</button>
+            </div>
+        </div></a>
+
+        <!-- Product Card 2 -->
+        <div class="product-card">
+            <img src="https://www.reliancedigital.in/medias/Lenovo-Ideapad-Gaming-Laptop-493838769-i-1-1200Wx1200H-300Wx300H?context=bWFzdGVyfGltYWdlc3wxMjc0OXxpbWFnZS9qcGVnfGltYWdlcy9oYzUvaDdkLzEwMDQwMDUyOTA4MDYyLmpwZ3w5ZDdkM2JiN2QwMTk0OTAyNWYxZWJhYjRmY2FkNTc3M2Q2MzkzMjdlNTU1OWZkZGIxOTNjNzE5ODBiYTFlNTEx" alt="Laptop Image">
+            <div class="product-details">
+                <div class="product-name">Lenovo 2SIN IdeadPad Silm5 Laptop (AMD Ryzen R7-7730U/16 GB /512 GB SSD/Windows 11/ MSO/35.56 cm (14 inch)(493838769)
+                </div>
+                <div class="product-price"> ₹63,499.00</div>
+            </div>
+            <div class="actions">
+                <button>Compare</button>
+                <button>Add to Wishlist</button>
+            </div>
+        </div>
+
+        <!-- Product Card 3 -->
+        <div class="product-card">
+            <img src="https://www.reliancedigital.in/medias/Len-LOQ-15-8BIN-494352954-i-1-1200Wx1200H-300Wx300H?context=bWFzdGVyfGltYWdlc3w3MTczOHxpbWFnZS9qcGVnfGltYWdlcy9oMTcvaGU3LzEwMTI0OTY4OTUxODM4LmpwZ3wwNWMwMzk4ZTk0YjhkZmNiOTMwNWI2MzQxZjhiNWQ3YjMwZmQzMDVlNjZiY2RiMDk0NzAwOWRiYWExMTA4NmJl" alt="Laptop Image">
+            <div class="product-details">
+                <div class="product-name">Lenovo LOQ 15IAX9 Intel Core i5-12450HX Laptop (39.62 cm (15.6 inch)/8BIN/12i5HX/12 GB/512 GB SSD/2050/BT), Luna Grey(494352954)</div>
+                <div class="product-price">₹59,599.00</div>
+            </div>
+            <div class="actions">
+                <button>Compare</button>
+                <button>Add to Wishlist</button>
+            </div>
+        </div>
+        <A href="D:\MY DATA COCHING\website 12\PRO 2.html">
+          <!-- Product Card 4 -->
+          <div class="product-card">
+            <img src="https://p1-ofp.static.pub//fes/cms/2023/06/08/t2y9bc86e6bjrrm5a9qu2go1d3x9pw139172.png" alt="Laptop Image">
+            <div class="product-details">
+                <div class="product-name">ThinkPad E16 (16, Intel)(417117))</div>
+                <div class="product-price"> ₹48,491
+
+                </div>
+            </div>
+            <div class="actions">
+                <button>Compare</button>
+                <button>Add to Wishlist</button>
+            </div>
+        </div></A>
+      <!-- Product Card 5 -->
+      <div class="product-card">
+        <img src="https://www.reliancedigital.in/medias/Lenovo-Ideapad-Laptop-494267965-i-1-1200Wx1200H-300Wx300H?context=bWFzdGVyfGltYWdlc3w4ODQ4fGltYWdlL2pwZWd8aW1hZ2VzL2gyYS9oYTAvMTAwNjA0ODU2ODkzNzQuanBnfGI3YjMwNDY2YzY0ZjAwNDJiNzUzY2E4OGRhYmFlY2U2ZjI4ODkwMzMwZmE5N2I0ODE1ODcyYmQ2NTk0NjQ5NTY" alt="Laptop Image">
+        <div class="product-details">
+            <div class="product-name">Lenovo F0IN IdeaPad Pro 5 Laptop (AMD Ryzen R7-6800H/16 GB RAM/512 GB SSD/ 4GB/NVIDIA GeForce 3050 Graphics/Windows/40.64 cm (16 inch)(494267965)</div>
+            <div class="product-price"> ₹83,099.00</div>
+        </div>
+        <div class="actions">
+            <button>Compare</button>
+            <button>Add to Wishlist</button>
+        </div>
+    </div>
+      <!-- Product Card 3 -->
+      <div class="product-card">
+        <img src="https://www.reliancedigital.in/medias/Lenovo-82XQ0096IN-Laptop-494421367-i-1-1200Wx1200H-300Wx300H?context=bWFzdGVyfGltYWdlc3w2MDM5N3xpbWFnZS9qcGVnfGltYWdlcy9oYzYvaDkxLzEwMTU3Nzg5NDQ2MTc0LmpwZ3xmOWJhZjM2OWU0ZTMxNDY5YjcwYjlmMGIxYjRmMDI0OGNkZGQ3OTkwNzRlYmRmMWUzYjFjNjY1NDM4MTI1MjI4" alt="Laptop Image">
+        <div class="product-details">
+            <div class="product-name">Lenovo 82XQ0096IN Standard Laptop (AMD Ryzen 5 7520U/16 GB RAM/512 GB SSD/AMD Radeon 610M Graphics/Windows 11 Home/FHD) 39.62 cm (15.6 inch)(494421367)</div>
+            <div class="product-price">₹44,000.00</div>
+        </div>
+        <div class="actions">
+            <button>Compare</button>
+            <button>Add to Wishlist</button>
+        </div>
+    </div>
+      <!-- Product Card 3 -->
+      <div class="product-card">
+        <img src="https://www.reliancedigital.in/medias/HP-OMEN-17-cm2027TX-Laptop-494493043-i-1-1200Wx1200H-300Wx300H?context=bWFzdGVyfGltYWdlc3wzNzIyM3xpbWFnZS9qcGVnfGltYWdlcy9oYzgvaGI1LzEwMjEwNDAyNjY0NDc4LmpwZ3w2YWM0YzFiNzkyZTk4NmYwNGMyZGVmYTcyM2RiYTlmNTUwMTY1NjJiYmI0NGZlYzgxMDVkYzZlMDQ4OGJhZGM2" alt="Laptop Image">
+        <div class="product-details">
+            <div class="product-name">HP Omen 17 cm2027TX Gaming Laptop (Intel Core i7-13700HX/16 GB /1 TB SSD/Nvidia GeForce RTX 4060 /Windows 11 Home/QHD), 43.9 cm - 17.3 inch, Shadow Black(494493043)</div>
+            <div class="product-price"> ₹1,24,999.00</div>
+        </div>
+        <div class="actions">
+            <button>Compare</button>
+            <button>Add to Wishlist</button>
+        </div>
+    </div>
+      <!-- Product Card 3 -->
+      <div class="product-card">
+        <img src="https://www.reliancedigital.in/medias/HP-EG3081TU-Laptop-493842049-i-1-1200Wx1200H-300Wx300H?context=bWFzdGVyfGltYWdlc3w1NDgwMHxpbWFnZS9qcGVnfGltYWdlcy9oNTIvaDEwLzEwMTUwNDcyODQzMjk0LmpwZ3w1MjI0NWJhNjE4NWU3YjhkMmFlOTdkZDFiZGYzNjBjZmVhY2IyMTliNjk1ODZjNjdkYzA5Y2YyNDFiZjhhMzdi" alt="Laptop Image">
+        <div class="product-details">
+            <div class="product-name">HP Pavilion EG3081TU Laptop (13th Gen Intel Core i5-1340P/16GB/512GB SSD/Intel Iris Xe Graphics/Windows 11 Home/MSO/FHD), 39.62cm (15.6 inch)(493842049)</div>
+            <div class="product-price">₹68,750.00</div>
+        </div>
+        <div class="actions">
+            <button>Compare</button>
+            <button>Add to Wishlist</button>
+        </div>
+    </div>
+
+        <!-- Add more product cards here -->
+    </div>
+    
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bootstrap Image Slider</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+
+<div id="carouselExample" class="carousel slide" data-bs-ride="carousel">
+    <!-- Indicators -->
+    <div class="carousel-indicators">
+        <button type="button" data-bs-target="#carouselExample" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#carouselExample" data-bs-slide-to="1" aria-label="Slide 2"></button>
+        <button type="button" data-bs-target="#carouselExample" data-bs-slide-to="2" aria-label="Slide 3"></button>
+    </div>
+
+    <!-- Slider content -->
+    <div class="carousel-inner">
+        <div class="carousel-item active">
+            <img src="https://www.reliancedigital.in/medias/HP-Envy-Banner-1365x260pxD.jpg?context=bWFzdGVyfGltYWdlc3wxMTgzMzN8aW1hZ2UvanBlZ3xpbWFnZXMvaGIyL2g5Ny8xMDE4MTg1NzM3ODMzNC5qcGd8NDdlOGI0YTQ1NzI0MjQ2OTU0N2NmMWJjYjMwYWZjN2IzZDQ5NDExNDVhMmFiYTI5NDI4OTM0ZjMxYmIwZjEzYw" class="d-block w-100" alt="First Slide">
+        </div>
+        <div class="carousel-item">
+            <img src="https://www.reliancedigital.in/medias/Omen-Laptops-2-1-.jpg?context=bWFzdGVyfGltYWdlc3wxMjUxMDd8aW1hZ2UvanBlZ3xpbWFnZXMvaDA0L2g4Zi8xMDA5OTE4ODQ5ODQ2Mi5qcGd8NTZmZTc5YTFlMzM0NjAwNzIxYjRkNzZlYTViZjQzODg4NzVjNTM4YmFjMjkyMTk1MmRhZjQxZmFlZTk0OTAyNA" class="d-block w-100" alt="Second Slide">
+        </div>
+        <div class="carousel-item">
+            <img src="https://www.reliancedigital.in/medias/Pro-11-LT-7-1365x260.jpg?context=bWFzdGVyfGltYWdlc3wxNTU0NTF8aW1hZ2UvanBlZ3xpbWFnZXMvaGRlL2gzYS8xMDIwMTAzNDg1MDMzNC5qcGd8YjNmYzRkMDcwMTI4YjBiM2E4NTU3YWUwMzhmZmZmZGMyYzUxZjQ2OGJjMzQyZjQ0MTlmMTZmOWIzNjBlMDcxZQ" class="d-block w-100" alt="Third Slide">
+        </div>
+    </div>
+
+    <!-- Controls -->
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+    </button>
+</div>
+
+<!-- Bootstrap Bundle with Popper -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"></script>
+
+    
+</body>
+</html>
