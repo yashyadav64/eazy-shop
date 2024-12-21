@@ -67,11 +67,6 @@
             menu.style.display = 'none';
           }
         });
-      </script>
-    
-    
-
-<script>
   // Add click event to the hamburger button to toggle the menu
 document.getElementById('hamburger').addEventListener('click', function() {
     const navbar = document.querySelector('.navbar');
@@ -79,7 +74,6 @@ document.getElementById('hamburger').addEventListener('click', function() {
 });
 
 </script>
-        <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Bootstrap Image Slider</title>
         <!-- Bootstrap CSS -->
@@ -464,6 +458,73 @@ document.getElementById('hamburger').addEventListener('click', function() {
                 font-size: 30px;
             }
         }
+        /* Footer Styles */
+        .footer {
+            background-color: #333;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+    
+        .footer .footer-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            gap: 20px;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+    
+        .footer .footer-column {
+            flex: 1 1 200px;
+            margin-bottom: 20px;
+        }
+    
+        .footer h3 {
+            font-size: 18px;
+            margin-bottom: 10px;
+            color: #fff;
+        }
+    
+        .footer p, .footer a {
+            font-size: 14px;
+            color: #ccc;
+            margin: 5px 0;
+            text-decoration: none;
+        }
+    
+        .footer p a:hover, .footer a:hover {
+            color: #38ef7d;
+        }
+    
+        .footer .social-links {
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+            margin-top: 10px;
+        }
+    
+        .footer .social-links a {
+            color: white;
+            font-size: 18px;
+            text-decoration: none;
+        }
+    
+        .footer .social-links a:hover {
+            color: #38ef7d;
+        }
+    
+        /* Responsive Footer */
+        @media (max-width: 768px) {
+            .footer .footer-container {
+                flex-direction: column;
+                align-items: center;
+            }
+    
+            .footer .footer-column {
+                text-align: center;
+            }
+        }
     </style>
     
 <div class="cart-container">
@@ -738,8 +799,6 @@ document.getElementById('hamburger').addEventListener('click', function() {
       </div> 
       </div>
     </section>
-
-
     <!-- Footer Section -->
     <footer class="footer">
         <div class="footer-links">
@@ -750,5 +809,50 @@ document.getElementById('hamburger').addEventListener('click', function() {
         </div>
         <p>&copy; 2024 MyWebsite. All Rights Reserved.</p>
         </footer>
+        
+        <!-- Footer HTML -->
+        <div class="footer">
+            <div class="footer-container">
+                <!-- Footer Column 1: About Us -->
+                <div class="footer-column">
+                    <h3>About Us</h3>
+                    <p>We are a leading eCommerce platform, providing a wide range of products at competitive prices.</p>
+                    <p><a href="#">Learn More</a></p>
+                </div>
+        
+                <!-- Footer Column 2: Customer Service -->
+                <div class="footer-column">
+                    <h3>Customer Service</h3>
+                    <p><a href="#">Help Center</a></p>
+                    <p><a href="#">Shipping & Returns</a></p>
+                    <p><a href="#">Track Your Order</a></p>
+                </div>
+        
+                <!-- Footer Column 3: Quick Links -->
+                <div class="footer-column">
+                    <h3>Quick Links</h3>
+                    <p><a href="#">Privacy Policy</a></p>
+                    <p><a href="#">Terms & Conditions</a></p>
+                    <p><a href="#">Contact Us</a></p>
+                </div>
+        
+                <!-- Footer Column 4: Social Media -->
+                <div class="footer-column">
+                    <h3>Follow Us</h3>
+                    <div class="social-links">
+                        <a href="#" target="_blank"><i class="fab fa-facebook"></i></a>
+                        <a href="#" target="_blank"><i class="fab fa-twitter"></i></a>
+                        <a href="#" target="_blank"><i class="fab fa-instagram"></i></a>
+                        <a href="#" target="_blank"><i class="fab fa-linkedin"></i></a>
+                    </div>
+                </div>
+            </div>
+        
+            <p>&copy; 2024 Your Company Name. All rights reserved.</p>
+        </div>
+        
+        <!-- Font Awesome for Social Icons -->
+        <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+        
     </body>
     </html>
