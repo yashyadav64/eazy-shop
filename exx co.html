@@ -1,0 +1,153 @@
+<style>
+  /* Basic styling for the menu bar */
+  body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-image: url(https://img.freepik.com/free-photo/navy-blue-concrete-wall-with-scratches_53876-102666.jpg?ga=GA1.1.1779855304.1725098107&semt=ais_hybrid);
+    background-position: 0dvw;
+  }
+
+  .menu-bar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #333;
+    color: white;
+    padding: 10px 20px;
+  }
+
+  .menu-bar .menu-icon {
+    font-size: 24px;
+    cursor: pointer;
+    color: white;
+  }
+
+  .dropdown-menu {
+    position: absolute;
+    top: 50px;
+    right: 20px;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    display: none; /* Hidden by default */
+    list-style: none;
+    padding: 10px 0;
+    margin: 0;
+  }
+
+  .dropdown-menu li {
+    padding: 10px 20px;
+    color: #333;
+    cursor: pointer;
+  }
+
+  .dropdown-menu li:hover {
+    background-color: #f1f1f1;
+  }
+</style>
+
+<div class="menu-bar" style="background-image: url(https://img.freepik.com/free-vector/gradient-abstract-wireframe-background_23-2149009903.jpg?ga=GA1.1.1779855304.1725098107&semt=ais_hybrid);">
+  <!-- Icon for the menu -->
+  <div class="menu-icon" onclick="toggleMenu()">☰</div>
+</div>
+
+<!-- Dropdown menu -->
+<ul class="dropdown-menu" id="dropdownMenu" style="background-image: url(https://img.freepik.com/free-vector/abstract-banner-with-low-poly-plexus-network-communications-design_1048-12914.jpg?ga=GA1.1.1779855304.1725098107&semt=ais_hybridx);">
+<a href="file:///D:/MY%20DATA%20COCHING/website%2012/viwe%20oder%20confirm%20check%20list.html">  <li>my order</li></a>
+  <li>lon</li>
+ <a href="D:\MY DATA COCHING\website 12\mobiles.html"><li>Mobiles</li></a>
+  <li>electronic</li>
+  <a href="D:\MY DATA COCHING\website 12\laptop page.html"><li>laptop</li></a>
+ <a href="D:\MY DATA COCHING\website 12\sarch page code.html"><li>Search </li></a>
+ <a href="D:\MY DATA COCHING\website 12\bank baddha credit aaply.html"><li>credit Card</li></a>
+</ul>
+
+<script>
+  // JavaScript to toggle the dropdown menu
+  function toggleMenu() {
+    const menu = document.getElementById('dropdownMenu');
+    menu.style.display = menu.style.display === 'block' ? 'none' : 'block';
+  }
+
+  // Optional: Close menu when clicking outside
+  document.addEventListener('click', function(event) {
+    const menu = document.getElementById('dropdownMenu');
+    const menuIcon = document.querySelector('.menu-icon');
+    if (!menu.contains(event.target) && !menuIcon.contains(event.target)) {
+      menu.style.display = 'none';
+    }
+  });
+</script>
+
+
+<style>
+/* Reset */
+body, html {
+margin: 0;
+padding: 0;
+font-family: Arial, sans-serif;
+}
+
+/* Navbar Styles */
+.navbar {
+display: flex;
+justify-content: space-between;
+align-items: center;
+background-color: #333;
+padding: 10px 20px;
+color: #fff;
+box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.navbar .logo a {
+color: #fff;
+text-decoration: none;
+font-size: 1.5em;
+font-weight: bold;
+}
+
+.navbar .menu {
+display: flex;
+align-items: center;
+gap: 20px;
+}
+
+.navbar .menu a, .navbar .menu button {
+color: #fff;
+background: none;
+border: none;
+font-size: 1.5em;
+cursor: pointer;
+transition: color 0.3s;
+}
+
+.navbar .menu a:hover, .navbar .menu button:hover {
+color: #007BFF;
+}
+
+/* Responsive Styles */
+@media (max-width: 600px) {
+.navbar .menu {
+  display: none; /* Hide menu on small screens */
+  flex-direction: column;
+  gap: 10px;
+}
+
+.navbar .menu-toggle {
+  display: inline-block; /* Show hamburger icon */
+}
+
+.navbar.active .menu {
+  display: flex;
+}
+}
+</style>
+<script>
+// Add click event to the hamburger button to toggle the menu
+document.getElementById('hamburger').addEventListener('click', function() {
+const navbar = document.querySelector('.navbar');
+navbar.classList.toggle('active');
+});
+
+</script>
